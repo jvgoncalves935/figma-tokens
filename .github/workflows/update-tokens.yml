@@ -1,6 +1,9 @@
 name: Generate design tokens
 
 on:
+  push:
+    branches:
+      - feature/*
   repository_dispatch:
     types: update-tokens
 

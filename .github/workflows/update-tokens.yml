@@ -38,7 +38,7 @@ jobs:
           script: |
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
-              title: '${{ github.event.client_payload.commitMessage || 'Update design tokens' }}',
+              title: 'Update design tokens',
               owner,
               repo,
               head: '${{ github.ref_name }}',
